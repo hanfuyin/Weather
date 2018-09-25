@@ -11,7 +11,7 @@ class Weather
     protected $key;
     protected $guzzleOptions = [];
 
-    public function __construct(string $key)
+    public function __construct($key)
     {
          $this->key = $key;
     }
@@ -21,7 +21,7 @@ class Weather
         return new Client($this->guzzleOptions);
     }
 
-    public function setGuzzleOptions(array $option)
+    public function setGuzzleOptions($option)
     {
         $this->guzzleOptions = $option;
     }
@@ -30,7 +30,7 @@ class Weather
      *  获取天气
      *  @return json
      */
-    public function getWeather($city, string $type='base', string $format='json')
+    public function getWeather($city, $type='base', $format='json')
     {
         $url = 'https://restapi.amap.com/v3/weather/weatherInfo';
 
