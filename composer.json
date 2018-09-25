@@ -1,0 +1,28 @@
+{
+    "name": "hanfuyin\/weather",
+    "description": "hanfuyin's weather",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "hanfuyin",
+            "email": "18910490095@163.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "phpunit/phpunit": "^7.3",
+        "mockery/mockery": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hanfuyin\\Weather\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hanfuyin\\Weather\\ServiceProvider"
+            ]
+        }
+    }
+}
